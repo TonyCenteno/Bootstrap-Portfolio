@@ -3,6 +3,12 @@ body {
     background-image: url("../images/dust_scratches.png");
     background-repeat: repeat;
 }
+.img-fluid {
+    max-width: 93%;
+}
+.maincontent .row {
+    padding: 0 15px;
+}
 .navbar {
     background-color:#fff;
     border-bottom: 2px solid #ccc;
@@ -113,23 +119,48 @@ label {
     color: #ddd;
 }
 .portcontent {
-    padding: 20px 15px 0;
+    padding: 35px 15px 0;
 }
-.portcontent .col-6 h3 {
+.portcontent {
+    position: relative;
+}
+.portcontent h3 {
     background: #4aaaa5;
-    padding: 5px 0;
-    margin-top: 55px;
-}
-.card-img-overlay {
-    padding: 0px;
+    position: absolute;
+    bottom:8px;
+    width: 100%;
+    left: 0px;
+    padding: .5em;
+    font-weight: 100;
+    font-size: 20px;
 }
 .card-title a {
     text-decoration: none;
-    font-weight: 100;
-    font-size: 15px;
+}
+a {
+    color: #a5a5a5;
+}
+a:hover {
+    color: #666;
+}
+ul {
+    margin-top: 10px;
+}
+.navbar-light .navbar-brand  {
+    width: 100%;
 }
 
-
+@media only screen and (min-width: 574px) {
+    ul :last-child {
+        padding-right: 0px;
+    }
+    ul {
+        margin-top: 0px;
+    }
+    .navbar-light .navbar-brand {
+        width: auto;
+    }
+}
 @media only screen and (min-width: 768px) {
     .sidebar {
         max-height: 240px;
@@ -140,9 +171,9 @@ label {
     .card-title a {
         font-size: 20px;
     }
-    .portcontent .col-6 h3 {
-        background: #4aaaa5;
-        padding: 10px 0;
-        margin-top: 46%;
+    .portcontent h3 {
+        bottom:8px;
+        padding: 1em;
+        font-size: 24px;
     }
 }
